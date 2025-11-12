@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>생 수박주스</title>
+<style>
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .left {
+    flex: 1 1 40%;
+    padding: 20px;
+    text-align: center;
+  }
+  .left img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .right {
+    flex: 1 1 60%;
+    padding: 30px;
+  }
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .price {
+    color: #e60012;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .sub {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  .option-box {
+    background: #f3f3f3;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .option {
+    margin: 5px 0;
+  }
+  .option input {
+    margin-right: 8px;
+  }
+  .btn {
+    background-color: #0078ff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .btn:hover {
+    background-color: #005fcc;
+  }
+  @media (max-width: 768px) {
+    .container { flex-direction: column; width: 95%; }
+    .left, .right { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+    <img src="https://cdn.imweb.me/thumbnail/20220728/45a3a9f9a3bba.jpg" alt="생 수박주스">
+    <p>❄️ 냉동 보관</p>
+  </div>
+  <div class="right">
+    <div class="title">생 수박주스 6개입 (냉동, 250ml)</div>
+    <div class="sub">한 달간 300명 이상 구매 ★★★★★ (12,857개 리뷰)</div>
+    <div class="price">18,430원 <span style="font-size:14px; color:#666;">(100ml당 1,229원)</span></div>
+
+    <div class="option-box">
+      <p><strong>용량 / 수량 선택</strong></p>
+      <div class="option"><input type="radio" name="opt"> 250ml × 1개 — 3,400원</div>
+      <div class="option"><input type="radio" name="opt"> 250ml × 2개 — 6,590원</div>
+      <div class="option"><input type="radio" name="opt" checked> 250ml × 6개 — 18,430원</div>
+      <div class="option"><input type="radio" name="opt"> 250ml × 12개 — 36,080원 (최저 단위가)</div>
+    </div>
+
+    <button class="btn">🛒 구매하기</button>
+  </div>
+</div>
+
+</body>
+</html>
